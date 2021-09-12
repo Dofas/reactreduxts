@@ -1,6 +1,6 @@
 import axios from "axios";
 import { Dispatch } from "redux";
-import { UserAction, UserActionTypes } from "../../types/todo";
+import { UserAction, UserActionTypes } from "../../types/user";
 
 export const fetchUsers = () => {
   return async (dispatch: Dispatch<UserAction>) => {
@@ -11,7 +11,7 @@ export const fetchUsers = () => {
     } catch (e) {
       dispatch({
         type: UserActionTypes.FETCH_USERS_ERROR,
-        payload: "Something went wrong",
+        payload: "Something went wrong with user list",
       });
     }
   };

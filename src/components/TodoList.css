@@ -1,0 +1,14 @@
+.page {
+    border: 1px solid yellowgreen;
+    padding: 10px;
+}
+
+.activePage {
+    border: 3px solid orangered;
+    padding: 10px;
+}
+
+.allPages {
+    display: flex;
+    
+}
